@@ -3,17 +3,21 @@ public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello World");
 
-        int valorA = 20;
+        int valorA = 20; // Números inteiros
 
-        int valorB = 20;
+        int valorB = 20;  // Números inteiros
 
-        double tipoDouble = 5.5;
+        double numeroDecimal = 5.5; //Números Decimais
 
-        boolean tipoBooleano = true;
+        boolean tipoBooleano = true; //Verdadeiro ou Falso
 
-        char tipoChar = 'C';
+        char letra = 'C'; //Caracteres
 
-        int total = valorA + valorB;
+        String nome = "Caio"; //Texto
+
+        int total = valorA + valorB; // Soma entre valor A e valor B
+
+        Object objeto = new Object(); //Objeto
 
         System.out.printf("A soma total = %d", total);
 
