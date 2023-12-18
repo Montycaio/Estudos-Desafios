@@ -4,9 +4,9 @@ public class CalcularPagamento {
   public static void main(String[] args) {
     try {
 
-      System.out.println("Digite um número");
+      System.out.println("Digite um número:");
       int numeroX = System.in.read();
-      int numeroY = 20;
+      int numeroY = 50;
 
       alterarsoma(numeroX, numeroY);
 
