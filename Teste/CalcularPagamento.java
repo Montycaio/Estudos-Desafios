@@ -6,7 +6,7 @@ public class CalcularPagamento {
 
       System.out.println("Digite um número:");
       int numeroX = System.in.read();
-      int numeroY = 50;
+      int numeroY = 30;
 
       alterarsoma(numeroX, numeroY);
 
