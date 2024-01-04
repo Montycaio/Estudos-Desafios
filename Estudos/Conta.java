@@ -6,11 +6,6 @@ public class Conta {
         int agencia;
         int numero;
         String titular;
-
-        saldo = 5.50;
-        agencia = 1010;
-        numero = 1407;
-        titular = "roberto";
     }
     
 }
