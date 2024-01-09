@@ -15,6 +15,11 @@ public class LeitorScan {
         str = texto.nextLine();
         System.out.println("Bem-vindo " + str);
 
+        System.out.println("Digite um numero: ");
+        int numero = texto.nextInt();
+        System.out.println("O número digitado foi: " + numero);
+
+
         texto.close();
     }
 
