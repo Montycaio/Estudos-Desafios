@@ -2,8 +2,11 @@ package Estudos_2;
 
 import java.util.Scanner;
 
-public class Scanner {
+public class LeitorScan {
    
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
         Scanner texto = new Scanner(System.in);
@@ -12,6 +15,7 @@ public class Scanner {
         str = texto.nextLine();
         System.out.println("Bem-vindo " + str);
 
-        texto.clone();
+        texto.close();
     }
+
 }
