@@ -1,4 +1,4 @@
-package Estudos_2;
+package Estudos_3;
 
 public class Conta {
     public static void main(String[] args) {

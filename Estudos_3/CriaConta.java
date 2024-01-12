@@ -1,6 +1,6 @@
-public package Estudos_2;
+package Estudos_3;
 
-class CriaConta {
+public class CriaConta {
 
     public static void main(String[] args) {
         
