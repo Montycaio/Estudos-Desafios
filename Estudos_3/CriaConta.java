@@ -3,10 +3,10 @@ package Estudos_3;
 public class CriaConta {
 
     public static void main(String[] args) {
-        
-        Conta primeiraConta = new Conta();
-        primeiraConta.saldo = 120;
 
-        System.out.println("Primeira Conta: " + primeiraConta.saldo);
+      //  Conta primeiraConta = new Conta();
+       // primeiraConta.saldo = 120;
+
+       // System.out.println("Primeira Conta: " + primeiraConta.saldo);
     }
 }
