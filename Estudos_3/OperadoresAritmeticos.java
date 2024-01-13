@@ -10,8 +10,8 @@ public class OperadoresAritmeticos {
         System.out.printf("x + y = %d\n", x + y);
         System.out.printf("x - y = %d\n", x - y);
         System.out.printf("x * y = %d\n", x * y);
-        System.out.printf("x / y = %d\n", x / y); // Divisão inteira com trun
-        System.out.printf("x / y = %2.2f\n", x / (double)y); // Divisão normal
+        System.out.printf("x / y = %d\n", x / y); // Divisão inteira com truncagem
+        System.out.printf("x / y = %2.1f\n", x / (double)y); // Divisão normal
         System.out.printf("x %% y = %d\n", x % y);
 
     }
