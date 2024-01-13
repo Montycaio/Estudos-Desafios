@@ -11,7 +11,7 @@ public class CalcularPagamento {
       alterarsoma(numeroX, numeroY);
 
     } catch (Exception e) {
-      // TODO: handle exception
+      
       System.out.println("Erro: " + e.getMessage());
     }
 
