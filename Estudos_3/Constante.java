@@ -6,6 +6,7 @@ public class Constante {
     
     private static final double LARGURA = 10.0;
 
+
     public static void main(String[] args){
 
         try (Scanner entrada = new Scanner(System.in)) {
@@ -14,6 +15,7 @@ public class Constante {
 
             double area = calculaArea(LARGURA, compr);
             System.out.println("A área é: " + area);
+
         }
 
 

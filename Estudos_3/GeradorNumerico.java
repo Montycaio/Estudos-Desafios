@@ -7,7 +7,7 @@ public class GeradorNumerico {
     public static void main(String[] args) {
         Random aleatorio = new Random();
 
-        int valor = aleatorio.nextInt(10) +1;
+        int valor = aleatorio.nextInt(19) +1;
 
         System.out.println("Número gerado: " + valor);
     }
