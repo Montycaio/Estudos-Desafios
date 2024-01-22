@@ -19,7 +19,12 @@ public class TiposPrimitivos {
 
         Object objeto = new Object(); //Objeto
 
-        System.out.printf("A soma total = %d", total);
+        System.out.printf("A soma total = %d\n", total);
+        System.out.println("Números decimais: " + numeroDecimal);
+        System.out.println("Tipo Booleano" + tipoBooleano);
+        System.out.println("Tipo char: " + letra);
+        System.out.println("Tipo String: " + nome);
+        System.out.println("Tipo Objeto" + objeto);
 
     }
 }
