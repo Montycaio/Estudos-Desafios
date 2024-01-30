@@ -6,7 +6,7 @@ public class ContadorWhile2 {
     public static void main(String[] args) {
         Scanner Entrada = new Scanner(System.in);
         String nome;
-
+        
         System.out.println("Digite seu nome: ");
         nome = Entrada.nextLine();
 
