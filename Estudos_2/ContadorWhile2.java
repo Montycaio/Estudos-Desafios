@@ -1,4 +1,4 @@
-package Estudos_3;
+package Estudos_2;
 
 import java.util.Scanner;
 
