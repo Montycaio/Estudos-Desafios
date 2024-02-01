@@ -2,7 +2,7 @@ package Estudos_2;
 
 public class OperadoresTernarios {
     public static void main(String[] args) {
-        int A = 8;
+        int A = 5;
         String b;
 
         b = (A == 8) ? "Verdadeiro" : "Falso";
