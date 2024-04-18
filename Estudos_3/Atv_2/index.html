@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="post" name="form1" action="envia">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome</label>
+            <input type="text" name="Nome" size="30" required="required"><br>
+            <label>Endereço</label>
+            <input type="text" name="Endereço" size="25" required="required"><br>
+            <label>Cidade</label>
+            <input type="text" name="Cidade" size="25" required="required"><br>
+            <label>Estado</label>
+            <select name="Estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+            <input type="submit" name="envia" value="Enviar">
+            <input type="reset" name="limpa" value="Limpar">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-color:rgb(111, 171, 219);
+    color: black;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: orange;
+    font-size: 24pt;
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18pt;
+    color: purple;
+    text-shadow: 2px 1px 1px black;
+}
+
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+}
+
+input, select, textarea {
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    background-color: rgba(0, 41, 128, 0.11);
+}
+
+input:hover, select:hover, textarea:hover {
+    border: 1px solid purple;
+    box-shadow: 1px 1px 2px rgb(7, 133, 252);
+}
