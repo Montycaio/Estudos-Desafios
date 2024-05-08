@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form name="f_cad" action="index.php" method="post">
+        <label>Nome:</label><br/>
+        <input type="text" name="f_nome" size="40" maxlength="30"><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="f_senha" size="40" maxlength="20"><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+    <script>
+        function criarCookie(nome, valor, expira) {
+            var dtExpira = "expires =  Tue, 01 Jan 2115 12:00:00 UTC ";
+            document.cookie = nome + "=" + valor + ";" + dtExpira;
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
