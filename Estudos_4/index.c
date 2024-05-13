@@ -1,9 +1,7 @@
-#include <locale.h>
+#include <stdio.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
-setlocale(LC_ALL, "Portuguese");
-printf("Olá Mundo");
-return 0;
-
+    printf("Hello World\n");
+    return 0;
 }
