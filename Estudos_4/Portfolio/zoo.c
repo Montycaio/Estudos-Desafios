@@ -17,11 +17,14 @@
 
 int main()
 {
-    int animal, quantidade_animal, valor_comida = 0;
+    int animal, quantidade_animal, valor_comida, resp = 0;
 
     printf("\nFOOD-ZOO\n");
     printf("O melhor programa para realizar calculo de comida dos animais do zoologico.\n");
 
+    for (resp = 0; resp <= 1;)
+    {
+    
     printf("\nLISTA DE ANIMAIS DO ZOO\n\n");
     printf("1: Leao\n");
     printf("2: Leopardo\n");
@@ -38,6 +41,12 @@ int main()
     printf("\nInforme o Animal: \n");
     scanf("%d", &animal);
     getchar();
+
+    while (animal > 10)
+    {
+        printf("\nAnimal nao registrado, favor verificar lista de animais do zoologico\n\n");
+        return 0;
+    }
 
     printf("\nInforme a Quantidade de animais: \n");
     scanf("%d", &quantidade_animal);
@@ -67,6 +76,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
     
     else if (animal == 2)
@@ -76,6 +88,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
     
     else if (animal == 3)
@@ -85,6 +100,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
 
     else if (animal == 4)
@@ -94,6 +112,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
 
     else if (animal == 5)
@@ -103,6 +124,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
     
     else if (animal == 6)
@@ -112,6 +136,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
     
     else if (animal == 7)
@@ -121,6 +148,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
 
     else if (animal == 8)
@@ -130,6 +160,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
 
     else if (animal == 9)
@@ -139,6 +172,9 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
     
     else if (animal == 10)
@@ -148,13 +184,18 @@ int main()
         printf("Quantidade de comida por dia: %d kg\n", quantd_diaria);
         printf("Quantidade de comida por mes: %d kg\n", quantd_mes);
         printf("Custo estimado por mes: %d reais\n\n", valor_mensal);
+        printf("\nRealizar novo calculo? 1:Sim | 2: Nao\n");
+        scanf("%d", &resp);
+        getchar();
     }
 
     else
     {
-        printf("Animal nao registrado, favor verificar lista de animais do zoologico");
+        
     }
-    
+
+    }
+
     system("PAUSE");
     return 0;
 }
