@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    /*Rascunho de fórmulas:
-
-    //Quantidade de kilo por animal
-    valor_comida / quantidade_animal;
-
-    //Quantidade por dia
-    valor_comida * quantidade_animal;
-
-    //Quantidade por mês
-    (valor_comida * quantidade_animal)*30;
-
-    //Valor estimado por mês
-    ((valor_comida * quantidade_animal)*30)*valor_comida;*/
 
 int main()
 {
