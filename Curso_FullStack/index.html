@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        Meu primeiro site
+    </title>
+</head>
+
+<body>
+    <p style="color: red; font-size: 40px; font-weight: bold;">
+        Estou no meu primeiro dia cursando o curso fullstack
+        <br>
+        Agora eu quebrei uma linha
+    </p>
+    Corpo do meu primeiro site
+
+
+    <br><br><br><br>
+    <button onclick="funcaoQueEscreveMensagem()">Clique para exibir uma mensagem</button>
+    <p id="escreverMensagem"></p>
+</body>
+
+
+</html>
+<script>
+
+    function funcaoQueEscreveMensagem(){
+        document.getElementById('escreverMensagem').textContent = 'Este texto deve aparecer apos clicar no botao';
+    }
+
+</script>
