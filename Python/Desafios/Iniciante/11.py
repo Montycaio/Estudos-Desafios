@@ -1,14 +1,17 @@
-cod_1 = int(input())
-num_1 = int(input())
-val_1 = float(input())
+# Lendo os dados da primeira peça
+codigo1, quantidade1, valor_unitario1 = input().split()
+codigo1 = int(codigo1)
+quantidade1 = int(quantidade1)
+valor_unitario1 = float(valor_unitario1)
 
-cod_2 = int(input())
-num_2 = int(input())
-val_2 = float(input())
+# Lendo os dados da segunda peça
+codigo2, quantidade2, valor_unitario2 = input().split()
+codigo2 = int(codigo2)
+quantidade2 = int(quantidade2)
+valor_unitario2 = float(valor_unitario2)
 
-pc1 = num_1 * val_1 
-pc2 = num_2 * val_2
+# Calculando o valor total a pagar
+valor_a_pagar = (quantidade1 * valor_unitario1) + (quantidade2 * valor_unitario2)
 
-valorTotal = pc1 + pc2
-
-print(f"VALOR A PAGAR: R$ {valorTotal:.2f}")
+# Exibindo o resultado formatado com 2 casas decimais
+print(f"VALOR A PAGAR: R$ {valor_a_pagar:.2f}")
