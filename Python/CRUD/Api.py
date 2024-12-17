@@ -23,6 +23,8 @@ def consultar_tempo(cidade, api_key):
             print(f"Sensação térmica: {sensacao}°C")
             print(f"Descrição: {descricao}")
             print(f"Umidade: {umidade}%")
+
+            print(dados)
         
         else:
             print("Erro ao consultar a API. Verifique a cidade ou sua chave de API.")
@@ -31,5 +33,5 @@ def consultar_tempo(cidade, api_key):
         print(f"Erro na conexão: {e}")
 
 
-SUA_CHAVE_API = "7b4219dbdac9f642a977430fa31f750e"
+SUA_CHAVE_API = "01b2ac345e13b04c5b286c7919d329ef"
 consultar_tempo(input("Digite a cidade: "), SUA_CHAVE_API)
