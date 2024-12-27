@@ -1,7 +1,5 @@
 tarefas = ["Estudar Python", "Fazer exercícios", "Descansar"]
 
-A = 1
-
 print("Suas tarefas de hoje:")
 for tarefa in tarefas:
     print(f"- {tarefa}")
@@ -11,6 +9,8 @@ for tarefa in tarefas:
     else:
         print("Não esqueça de fazer!")
     print("----")
+
+A = 1
 
 for A in range(3,10):
     print(A)
