@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" method="get">
+        <label for="into"><h1>Calculadora</h1></label>
+        
+            <label for="num1"> <strong>Numero 1:</strong> </label>
+            <input type="number" name="num1" id="num1" required>
+        
+        
+        
+            <label for="num2"> <strong>Numero 1:</strong> </label>
+            <input type="number" name="num2" id="num2" required>
+        
+
+        <div>
+            <button type="submit" id="adicao"       >+</button>
+            <button type="submit" id="subtracao"    >-</button>
+            <button type="submit" id="multiplicacao">*</button>
+            <button type="submit" id="divisao"      >/</button>
+        </div>
+    </form>
+
+        <p id="mensagem"></p>
+        
+        <script>
+            function calcular(op) {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result;
+
+                if (isNaN(num1) || isNaN(num2)) {
+                    document.getElementById('mensagem').textContent = 'Preencha os campos com numeros, porfavor. :)';
+                    return;
+                }
+
+                
+                    switch (op) {
+                    case 'adicao':
+                        result = num1 + num2;
+                        break;
+                    case 'subtracao':
+                        result = num1 - num2;
+                        break;
+                    case 'multiplicacao':
+                        result = num1 * num2;
+                        break;
+                    case 'divisao':
+                        result = num1 / num2;
+                        break;
+                }
+
+                
+                if (num2 == 0) {
+                               
+                    document.getElementById('mensagem').textContent = result = 'Não é possivel realizar divisão por zero.  :)';
+                    return;
+                }
+                else{
+                    
+                    document.getElementById('mensagem').textContent = "Resultado: " + result;
+                }
+
+                
+            }
+
+
+
+
+            document.getElementById('adicao').addEventListener('click',function(event){
+                event.preventDefault();
+
+                calcular('adicao');
+     
+            })
+            
+            document.getElementById('subtracao').addEventListener('click',function(event){
+                event.preventDefault();
+
+                calcular('subtracao');
+     
+            })
+            
+            document.getElementById('multiplicacao').addEventListener('click',function(event){
+                event.preventDefault();
+
+                calcular('multiplicacao');
+     
+            })
+            
+            document.getElementById('divisao').addEventListener('click',function(event){
+                event.preventDefault();
+
+                calcular('divisao');
+     
+            })
+            
+           
+        </script>
+</body>
+</html>

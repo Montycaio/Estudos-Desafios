@@ -1,0 +1,79 @@
+body {
+    background-color: #87CEEB; /* Azul do céu */
+    color: #fff; /* Branco para texto */
+    font-family: 'Press Start 2P', cursive; /* Fonte retrô estilo jogo */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #FF6347; /* Vermelho vibrante */
+    text-shadow: 2px 2px 0px #000; /* Sombra para destacar */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #228B22; /* Verde da grama */
+    border: 8px solid #8B4513; /* Marrom para bordas pixeladas */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #FFA500; /* Laranja para botões */
+    color: #000;
+    font-size: 1.2em;
+    border: 3px solid #8B4513; /* Marrom */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #FF6347; /* Vermelho vibrante */
+    color: #fff;
+    transform: scale(1.1); /* Efeito de zoom */
+    transition: 0.2s;
+}
+
+label {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+input[type="text"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 3px solid #8B4513; /* Marrom */
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #FFD700; /* Amarelo */
+    color: #000;
+    margin: 5px 0;
+    padding: 10px;
+    border: 2px solid #8B4513; /* Marrom */
+    border-radius: 5px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #fff;
+}

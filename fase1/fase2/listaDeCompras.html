@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lista de Compras</h1>
+    <form id="form" method="get">
+        <input type="text" id="compra" placeholder="Digite o item da comprar...">
+        <button type="submit">salvar</button>
+    </form>
+    <ul id="lista"></ul>
+
+    <script>
+
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var compra = document.getElementById('compra').value.trim();
+
+            if (compra) {
+                const li = document.createElement('li')
+                li.textContent = compra;
+                console.log(li);
+
+                document.getElementById('lista').appendChild(li);
+                document.getElementById('compra').value = '';
+
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'deletar';
+                removeBtn.addEventListener('click', function () {
+                    li.remove();
+                });
+                li.appendChild(removeBtn);
+
+
+
+            }
+            else {
+                alert('Digite o item antes de salvar.  :)')
+            }
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Cores</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            margin: 20px auto;
+            border: 2px solid black;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Cores</h1>
+    <div class="box" id="colorBox">Cinza</div>
+    <div class="buttons">
+        <button id="redButton">Vermelho</button>
+        <button id="greenButton">Verde</button>
+        <button id="blueButton">Azul</button>
+    </div>
+
+    <script>
+        document.getElementById('redButton').addEventListener('click',function(event){
+            event.preventDefault();
+
+            document.getElementById('colorBox').style.backgroundColor = 'red';          
+            document.getElementById('colorBox').innerHTML = 'Red';          
+        })
+
+        document.getElementById('greenButton').addEventListener('click',function(event){
+            event.preventDefault();
+
+            document.getElementById('colorBox').style.backgroundColor = 'green';          
+            document.getElementById('colorBox').innerHTML = 'Green';           
+        })
+
+        document.getElementById('blueButton').addEventListener('click',function(event){
+            event.preventDefault();
+
+            document.getElementById('colorBox').style.backgroundColor = 'blue';          
+            document.getElementById('colorBox').innerHTML = 'Blue';           
+        })
+
+        
+    </script>
+</body>
+</html>

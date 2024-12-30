@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Personalizada</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form id="form" method="get">
+        <label for="into"><h1>Tabuada</h1></label>
+        <label for="discr">Tabuada Personalizada de 5 a 15.</label>
+        <input type="number" name="numero" id="numero" placeholder="Digite um número...">
+        <button type="submit">enviar</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            var numero = parseFloat(document.getElementById('numero').value);
+            var mensagem = '';
+            var result;
+            
+            
+            
+            for(var i = 5; i <=15; i++){
+                
+                result = numero * i;
+                mensagem += '| ' + numero + ' x ' + i + ' = ' + result + ' | ' + '<br>' ;
+            }
+            
+            document.getElementById('mensagem').innerHTML = mensagem;
+        
+        })
+    </script>
+
+</body>
+</html>

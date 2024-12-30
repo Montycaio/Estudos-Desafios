@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de tarefas</h1>
+
+    <form id="form" method="get">
+        
+        <div>
+            <input type="text" id="tarefa" placeholder="Digite o nome da tarefa...">
+            <button type="submit" id="salvar">Salvar</button>           
+        </div>
+        
+    </form>
+
+    <ul id="lista"></ul>
+
+    <script>
+        document.getElementById('form').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            var tarefa = document.getElementById('tarefa').value.trim();
+
+            if (tarefa) {
+                const li = document.createElement('li');
+                li.textContent = tarefa;
+
+                document.getElementById('lista').appendChild(li);
+                document.getElementById('tarefa').value='';
+            }
+        })
+
+    </script>
+
+</body>
+</html>
